@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BonnetHaarkunst</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <header>
+            <a href="#start" class="logo">
+                <img src="./Bilder/logo.jpg" alt="Logo">
+            </a>
+            <button id="menue-button" aria-label="Menü öffnen">☰</button>
+            <nav id="hauptmenue">
+                <ul>
+                    <li><a href="#start">Start</a></li>
+                    <li><a href="#leistung">Leistung</a></li>
+                    <li><a href="#preise">Preise</a></li>
+                    <li><a href="#galerie">Galerie</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                </ul>
+            </nav>
+        </header>
+
+    <main>
+        <section id="start">
+            <h1>Willkommen bei BonnetHaarkunst</h1>
+            <p>Wir bieten professionelle Haarkunst und Styling-Dienstleistungen.</p>
+            <button type="button">Jetzt Termin buchen</button>
+        </section>
+
+        <section id="leistung">
+            <h2>Unsere Leistungen</h2>
+            <div class="karten">
+                <div class="karte">
+                    <h3>Haarschnitt</h3>
+                    <p>Professionelle Haarschnitte nach Ihrem Wunsch.</p>
+                </div>
+                <div class="karte">
+                    <h3>Färben</h3>
+                    <p>Individuelle Farbberatung und Färbetechniken.</p>
+                </div>
+                <div class="karte">
+                    <h3>Bartstyling</h3>
+                    <p>Professionelle Bartstyling-Dienstleistungen.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="preise">
+            <h2>Unsere Preise</h2>
+            <table>
+                <tr>
+                    <th>Leistung</th>
+                    <th>Preise</th>
+                </tr>
+                <tr>
+                    <td>Haarschnitt</td>
+                    <td>50€</td>
+                </tr>
+                <tr>
+                    <td>Färben</td>
+                    <td>30€</td>
+                </tr>
+                <tr>
+                    <td>Bartstyling</td>
+                    <td>20€</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="galerie">
+            <h2>Galerie</h2>
+            <p>Sehen Sie sich unsere Arbeiten in der Galerie an.</p>
+            <div class="bilder">
+                <img src="./Bilder/Haarschnitt.jpg" alt="Haarschnitt">
+                <img src="./Bilder/Färben.jpg" alt="Färben">
+                <img src="./Bilder/bartstyling.jpg" alt="Bartstyling">
+                <img src="./Bilder/salon.jpg" alt="Salon">
+            </div>
+        </section>
+        
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <p>Kontaktieren Sie uns für Termine und Anfragen.</p>
+            <div class="kontakt-box"> 
+                <div class="kontakt-info">    
+                    <h3>Öffnungszeiten</h3>
+                    <p><b>Montag:</b> 9-18 Uhr</p>
+                    <p><b>Dienstag:</b> 9-18 Uhr</p>
+                    <p><b>Mittwoch:</b> 9-18 Uhr</p>
+                    <p><b>Donnerstag:</b> 9-18 Uhr</p>
+                    <p><b>Freitag:</b> 9-17 Uhr</p>
+                    <p><b>Samstag:</b> 9-19 Uhr</p>
+                    <p><b>Sonntag:</b> geschlossen</p>
+                    <br>    
+                    <p>Maxstraße 4, 03108 Leipzig</p>
+                    <p>Tel. +49 151 6383578 </p>
+                    <p>bonnet.haarkunst@gmail.com</p>
+                    <br>
+                </div>
+                <div class="kontakt-formular">
+                    <h4>Kontaktaufnahme</h4>
+                    <form id="kontaktformular">
+                        <label for="fname">Vorname</label>
+                        <input type="text" id="fname"> 
+                        <label for="lname">Nachname</label>
+                        <input type="text" id="lname">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                        <label for="nach">Nachricht</label>
+                        <textarea id="nach" rows="5"></textarea>
+                        <input type="submit" value="Senden">
+                    </form>
+                    <p id="meldung"></p>
+                </div>
+            </div>
+        </section>
+     
+    </main>
+   <footer>
+            <p>&copy; 2026 Haarkunst Bonnet</p>
+            <p>Tel. +49 151 6383578 · bonnet.haarkunst@gmail.com</p>
+            <nav>
+                <a href="#">Impressum</a>
+                <a href="#">Datenschutz</a>
+            </nav>
+        </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
